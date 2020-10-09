@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mulai"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/mulai"
+        android:name="id.dicoding.mirel.vgsa_pertemuan11.mulaiFragment"
+        android:label="mulai fragment"
+        tools:layout="@layout/mulai_fragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/mulai" />
+    </fragment>
+    <fragment
+        android:id="@+id/selanjutnya"
+        android:name="id.dicoding.mirel.vgsa_pertemuan11.selanjutFragment"
+        android:label="selanjutnya fragment"
+        tools:layout="@layout/selanjut_fragment">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/mulai" />
+    </fragment>
+</navigation>
